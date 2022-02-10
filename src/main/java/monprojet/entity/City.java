@@ -5,6 +5,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
+//import org.springframework.web.bind.annotation.PostMapping;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
@@ -29,4 +31,5 @@ public class City {
     @NonNull
     @ManyToOne(optional = false) // obligatoire, la clé étrangère ne doit pas être nulle
     Country country;
+
 }
